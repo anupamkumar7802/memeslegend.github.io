@@ -1,7 +1,11 @@
 
 :root{
     --gredient:linear-gradient(#fb7ce3,#79e8f1);
-    
+  --textshadow1: drop-shadow( gray 0px 3px 3px);
+  --textshadow2: gray 2px 4px 5px; 
+  --boxshadow:
+
+  }
 }
 
 /* for hmburger icon */
@@ -61,34 +65,74 @@ font-size: 20px;
     border-radius: 100px;
   }
 
-
-
-
-
-  .memebg{
-    background-image: var(--gredient);
-    padding: 5px;
+  
+  .mlml{
+    width: fit-content;
+    height: fit-content;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns:1fr 4fr ;
+    grid-gap:20px;
+    overflow: hidden; 
+    overflow-x: hidden;
+    
+  }
+  
+  
+  .mlml :nth-child(1) img{
+    object-fit:cover;
+    width: 1fr;
+    height:300px;
+  border: solid 0px transparent;
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+  border-right: solid gray 2px;
+  display:flex;
+  justify-content: flex-start;
   
   }
-  .memesection{
-    border: solid transparent ;
+  .mlml :nth-child(2){
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .mlml :nth-child(2) h1{
+text-transform: uppercase;
+text-align: center !important;
+align-self: center;
+text-shadow: var(--textshadow2);
+  }
+  .mlml :nth-child(2) span{
+ color: gray;
+ transition: .5s;
+
+  }
+  .mlml :nth-child(2) a span{
+    background-image:var(--gredient);
+    padding: 2px;
     border-radius: 10px;
-    grid-template-columns: 2fr 5fr !important;
-
-
-  }
-  .side1{
-  width: 500px;
-  height: auto;
+    transition: .5s;
 
   }
-  .memepic {
-   min-width:200px ;
-   min-height:200px;
-    object-fit:cover;
+  .mlml :nth-child(2) a span div {
+    background-color:white;
+    padding: 5px;
+    color:black;
+    text-transform: uppercase;
+    text-shadow: var(--textshadow2);    border-radius: 10px;
+    transition: .5s;
+    box-shadow:2px 5px 10px #79e8f1 ;
+    }
+  .mlml :nth-child(2) a span div:hover {
+ font-size: 20px;
+ transition: .5s;
   }
-
+     .wrapper{
+    background-image: var(--gredient)
+    ;
+    padding: 5px;
+    border-radius:10px;
+  }
 @media only screen and  (max-width:425px)
 {
 
@@ -109,4 +153,9 @@ font-size: 20px;
     height:40px !important;
     filter: drop-shadow( gray 0px 3px 3px);
 }
+section :nth-child(2) div .two{
+order: 1;
+display: flex;
+}
+
 }

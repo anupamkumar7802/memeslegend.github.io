@@ -6,27 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="memes.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">  
+   <script src="bootstrap/bootstrap.bundle.js"></script>
 
+    <style>
+        smallh1{
+/* font-size: 30px !important; */
+/* transform: translateX(-120px) !important; */
+transition:all 2s ease-in-out ;
+letter-spacing: normal;
+animation: slide 2s ease-in forwards;
+}
+@keyframes slide {
+    0%{
+        font-size: normal;
+    }
+    20%{
+        font-size:45px;
+        transform: translateX(-20px);
+
+    }
+    40%{
+        font-size:40px;
+        transform: translateX(-40px);
+
+    }
+    60%{
+        font-size:37px;
+        transform: translateX(-60px);
+
+    }
+    80%{
+        font-size:35px;
+        transform: translateX(-80px);
+
+    }
+    100%{
+        font-size:30px;
+        transform: translateX(-100px);
+
+    }
+
+}
+
+input {
+    
+    background-color:transparent;
+    height:45px;
+    width: 50px;
+    border:none;
+    border-bottom: 2px white solid;
+    color:white;
+    text-shadow: var(--textshadow2);
+    letter-spacing: 2px;
+    
+    font-weight: bolder;
+
+}
+.input[type=text] {
+width: 10px !important;
+-webkit-transition: width 0.4s ease-in-out;
+/* transform: translateX(-10px) !important; */
+color:white;
+
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    transition: width 1s ease-in-out;
+    width:100%;
+    color:white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-shadow: var(--textshadow2);
+
+}
+input[type=text]:focus {
+    border:none;
+    width: fit-content;
+    color:white;
+}
+    </style>
+    <script>
+        var searchbar = document.getElementsByTagName("input");
+        var heading = document.getElementsByTagName("h1");
+ 
+        console.log(searchbar);
+        console.log(heading);
+        
+ document.getElementById("input").onclick=slide(){
+     document.
+ }
+        function slide() {
+            window.c
+        }
+
+    </script>
 </head>
 
 <body>
-
-    <h1 class="text-nowrap  ">
+   <div class="header d-flex justify-content-center align-items-center" >
+    <h1 class=" smallh1 text-nowrap ">
         memes template
     </h1>
+    <div>
+        <input  type="text" name="search" class="fa fa-home" placeholder="">
+    </div>
+</div>
     <section class="main ">
-        <div class="meme1 catagory"> <img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#"> ANIMe</a> </div>
-        <div class="meme2 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">crickt</a> </div>
-        <div class="meme3 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">jokes</a> </div>
-        <div class="meme4 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">movie</a> </div>
-        <div class="meme5 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">series</a> </div>
-        <div class="meme6 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">tv show</a></div>
-        <div class="meme7 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">pokemon</a> </div>
-        <div class="meme8 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">naruto</a> </div>
-        <div class="meme9 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">the boys</a> </div>
-        <div class="meme9 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">the boys</a> </div>
-        <div class="meme9 catagory"><img class="img-fluid" src="p1.jpg" alt="" srcset=""><a href="#">the boys</a> </div>
+        <div class="meme1 catagory"> <img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#"> ANIMe</a> </div>
+        <div class="meme2 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">crickt</a> </div>
+        <div class="meme3 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">jokes</a> </div>
+        <div class="meme4 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">movie</a> </div>
+        <div class="meme5 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">series</a> </div>
+        <div class="meme6 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">tv show</a></div>
+        <div class="meme7 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">pokemon</a> </div>
+        <div class="meme8 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">naruto</a> </div>
+        <div class="meme9 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">the boys</a> </div>
+        <div class="meme9 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">the boys</a> </div>
+        <div class="meme9 catagory"><img class="img-fluid" src="images/primaryimgs/p1.jpg" alt="" srcset=""><a href="#">the boys</a> </div>
     </section>
 </body>
 

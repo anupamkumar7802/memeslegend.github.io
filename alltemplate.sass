@@ -1,0 +1,49 @@
+@import "ml.scss";
+@import url("globle.sass");
+
+.main {
+  column-gap: 20px !important;
+  row-gap: 100px !important;
+}
+body {
+  @include bgblack;
+}
+.catagory {
+  text-shadow: gray 2px 2px 2px;
+
+  background-image: none !important;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  color: black !important;
+  margin-bottom: 20px;
+  animation: zoom 2s forwords;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: 7scale (1);
+  }
+}
+.catagory a {
+  font-weight: light !important;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative !important;
+  font-size: 10px !important;
+  text-shadow: black 2px 4px 5px;
+  margin: 20px;
+}
+img {
+  filter: blur(0px) !important;
+}
+img :hover {
+  filter: opacity(0.7);
+}
+caption {
+  font-size: 10px !important;
+  color: rgb(0, 0, 0) !important;
+}

@@ -14,10 +14,93 @@ html {
   margin: 0;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }
+//preloader css
+
+#preloadersec {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: White;
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  border: 5px white solid;
+  box-shadow: inset 5px 5px 5px 5px black, 5px 5px 5px 5px who;
+  background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
+
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: white 1px solid;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
+}
+
+.loader span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.loader span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.loader span:nth-child(3) {
+  filter: blur(25px);
+}
+
+.loader span:nth-child(4) {
+  filter: blur(50px);
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+
+  background: white;
+
+  border-radius: 50%;
+}
+
+.loading {
+  -webkit-text-stroke: 1px white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
+  filter: drop-shadow(gray 2px 2px 2px);
+}
+
 .carousel-caption {
   button {
     width: 50%;
@@ -119,6 +202,7 @@ body {
 }
 
 .mlname {
+  overflow-x: hidden;
   text-shadow: gray 2px 4px 5px;
   font-size: 20px;
   text-transform: uppercase;
@@ -131,7 +215,7 @@ body {
 .wrapper {
   transition: 0.5s;
   /* animation: zoom 0.5s linear ; */
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 .mlml {

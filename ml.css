@@ -1,0 +1,84 @@
+
+:root{
+    --gredient:linear-gradient(#fb7ce3,#79e8f1);
+    
+}
+
+/* for hmburger icon */
+.fa {
+    font-size: 32px;
+    color: #9c47fc;
+    display: block;
+    background: -webkit-linear-gradient(#fb7ce3,#79e8f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .page-header {
+    font-size: 32px;
+    margin: 20px;
+    
+    display: block;
+    /* background: -webkit-linear-gradient(#9c47fc, #356ad2); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .fontawesome-icon-list {
+    text-align: center;
+  }
+  
+  .icon {
+    
+    
+    text-align: center;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all .2s;
+  }
+
+/* header gredient code  */
+  .mlnamediv {
+    max-width:auto;
+    
+    background: var(--gredient);
+    border-radius: 100px;
+    
+
+  }
+  
+  .mlname {
+text-shadow: gray 2px 4px 5px; 
+font-size: 20px;
+    text-transform: uppercase;
+    background:white;
+    color:black;
+    padding: 10px;
+    margin:15px ;
+    border-radius: 100px;
+  }
+
+@media only screen and  (max-width:425px)
+{
+
+.mlname{
+  font-size: 15px;
+}
+.mlcontiner{
+    align-self: start;
+    float: left;
+    display:flex;
+    justify-self: start;
+    align-content: space-between;
+}
+
+.mllogo img{
+    object-fit: cover;   
+    width: 40px !important;
+    height:40px !important;
+    filter: drop-shadow( gray 0px 3px 3px);
+}
+}

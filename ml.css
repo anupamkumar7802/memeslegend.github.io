@@ -3,9 +3,18 @@
   --gredient:linear-gradient(120deg,#fb7ce3,#79e8f1);
 --textshadow1: drop-shadow( gray 0px 3px 3px);
 --textshadow2: gray 2px 4px 5px; 
---boxshadow:
 
 
+}
+html{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 body::-webkit-scrollbar{
@@ -29,103 +38,6 @@ body::-webkit-scrollbar{
   /* <----------------------------------------carousal
    */
    /* Slideshow container */
-.slideshow-container {
-  width:100px;
-  height: 200px;
-
-  /* position: relative; */
-  margin-top:50px;
-}
-.slideshow-container .myslides{
-  width: 100% !important;
-  height:100px !important;
-}
-.slideshow-container .myslides img{
-width: fit-content;
-height:fit-content;
-object-fit: contain !important;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 
 /* <--------------------///////////////////carousal */
 
@@ -188,20 +100,8 @@ font-size: 20px;
 }
 .wrapper{
   transition: 0.5s;
-  animation: zoom 0.5s linear ;
+  /* animation: zoom 0.5s linear ; */
 
-}
-@keyframes zoom{
-  0%{
-    transform:translateY(50px);
-    filter: opacity(.5);
-  }
-  100%{
-    transform:translatey(0px);
-    filter: opacity(1 );
-    
-
-  }
 }
 
 
@@ -218,43 +118,43 @@ font-size: 20px;
 }
 
 
-.mlml :nth-child(1) img{
+.mlml :nth-child(odd) img{
   object-fit:cover;
   width:250;
   height:300px;
   
 border: solid 0px transparent;
-border-top-left-radius:10px;
-border-bottom-left-radius:10px;
+border-top-left-radius:0px;
+border-bottom-left-radius:0px;
 border-right: solid gray 2px;
 display:flex;
 justify-content: flex-start;
 
 }
-.mlml :nth-child(2){
+.mlml :nth-child(even){
   display:flex;
   flex-direction: column;
   
 }
-.mlml :nth-child(2) h1{
+.mlml :nth-child(even) h1{
 text-transform: uppercase;
 text-align: center !important;
 align-self: center;
 text-shadow: var(--textshadow2);
 }
-.mlml :nth-child(2) span{
+.mlml :nth-child(even) span{
 color: gray;
 transition: .5s;
 
 }
-.mlml :nth-child(2) a span{
+.mlml :nth-child(even) a span{
   background-image:var(--gredient);
   padding: 2px;
   border-radius: 10px;
   transition: .5s;
 
 }
-.mlml :nth-child(2) a span div {
+.mlml :nth-child(even) a span div {
   background-color:white;
   padding: 5px;
   color:black;
@@ -263,13 +163,13 @@ transition: .5s;
   
   box-shadow:2px 5px 10px #79e8f1 ;
   }
-.mlml :nth-child(2) a span div:hover {
+.mlml :nth-child(even) a span div:hover {
 background-color: transparent;
 transition: 0.5s;
 color:white;
 }
   
-.mlml :nth-child(2) a span .btn:hover{
+.mlml :nth-child(even) a span .btn:hover{
 
 
 animation: gredient .5s  forwards linear ;  
@@ -350,42 +250,34 @@ font-size: 20px;
 section .wrap{
   font-size: 15px;
 }
-section :nth-child(2) div .two{
+section :nth-child(even) div .two{
 order: 1;
 display: flex;
 
 }
-section :nth-child(2) div .two img{
+section :nth-child(even) div .two img{
 border-right:transparent;
 border-left:gray 2px solid;
 
 }
-section :nth-child(2) div .wrap{
+section :nth-child(even) div .wrap{
 margin-left:20px;
 }
-.mlml :nth-child(2) a span div:hover {
+.mlml :nth-child(even) a span div:hover {
   background-color: transparent;
   transition: 1s;
   color:white;
   }
     
-  .mlml :nth-child(2) a span .btn:hover,:active{
-  
-  
-  animation: gredient 1s  forwards ;
+  .mlml :nth-child(even) a span .btn:hover{  
   text-decoration: none;
   }
-  @keyframes gredient{
-  }
-  to{}
-  from{
-    
-  }
+  
   a:hover{
     text-decoration: none;
   }
   .btnspan{
-    margin-top: 10px;
+    margin-top: 15px;
     }
       
 

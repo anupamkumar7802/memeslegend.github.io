@@ -1,0 +1,35 @@
+.main{
+    
+    column-gap: 20px !important;
+    row-gap: 100px !important;
+ 
+}
+
+.catagory{
+    text-shadow: gray 2px 2px 2px; 
+    
+    background-image: none !important;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color:black !important;
+    margin-bottom: 20px;
+}
+.catagory a{
+    font-weight:light !important;
+    background-color:black;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative !important;
+    font-size: 10px !important;
+    text-shadow: black 2px 4px 5px; 
+margin:20px ;    
+}
+img{
+    filter: blur(0px) !important;
+}
+caption{
+    font-size:10px !important;
+    color: rgb(0, 0, 0) !important;
+
+}

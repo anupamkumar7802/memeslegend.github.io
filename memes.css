@@ -1,3 +1,21 @@
+body{
+    background-color: white !important;
+    
+}
+ h1{ padding: 10px;
+     color: white;
+     text-transform: uppercase;
+     font-size: medium;
+     text-align: center;
+text-shadow: gray 2px 4px 5px; 
+background-image:linear-gradient( 45deg ,#fb7ce3,#79e8f1);;
+-webkit-text-stroke:transparent 2px;
+letter-spacing: 2px;
+border-left: solid 10px #fb7ce3;
+border-right: solid 10px #79e8f1;
+margin-bottom: 30px !important;     
+ }
+
 .main{
     display: grid;
     justify-content: center;
@@ -13,5 +31,87 @@
 
 }
 .catagory{
-    border: solid 2px black;
+    border: solid 0px transparent;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    background-image:linear-gradient(#fb7ce3,#79e8f1);;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow:rgb(163, 163, 163) 2px -5px 15px ,white 2px 5px 15px;
+    transition: 2s;
+    text-transform: uppercase;
+}
+.catagory:hover{
+    
+    
+    animation: rotation infinite 2s forwards;
+    transition: .5s;
+}
+/* @keyframes rotation{
+    0%{
+        background-image:linear-gradient(180deg,#fb7ce3,#79e8f1);
+    }
+    20%{
+        background-image:linear-gradient(200deg,#79e8f1,#fb7ce3);
+        transition: 1s;
+    }
+    50%{
+        transition: 1s;
+        background-image:linear-gradient(220deg,#fb7ce3,#79e8f1);
+
+    }
+    70%{
+        transition: 1s;
+        background-image:linear-gradient(240deg,#79e8f1,#fb7ce3);
+        
+    }
+    100%{
+        transition: 1s;
+        background-image:linear-gradient(260deg,#fb7ce3,#79e8f1);
+        
+    }
+} */
+.catagory a{
+    font-weight: bolder;
+    color:white;
+    position: absolute;
+    -webkit-text-stroke:transparent 2px;
+    font-size: 20px;
+    text-shadow: black 2px 4px 5px; 
+    
+    
+}
+.catagory a:hover{
+color:white;
+letter-spacing: 2px;
+text-shadow:2px 4px 5px black ;
+text-underline-offset: 5px;
+transition: .5s;
+text-decoration-color: white;
+-webkit-text-stroke:transparent 2px;
+}
+
+img{
+    filter:blur(1px);
+    /* background-color: red; */
+    width: 150px !important;
+    padding: 5px;
+   
+    border-radius: 10px;
+height: 100px !important;
+object-fit:cover;
+}
+
+
+@media only screen and (max-width: 425px)
+{
+    h1{
+        padding-top: 20px;
+     font-size: 30px !important;
+    }
 }

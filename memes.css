@@ -1,0 +1,17 @@
+.main{
+    display: grid;
+    justify-content: center;
+     grid-template-columns: repeat(auto-fit,minmax(120px,150px));
+    grid-template-rows:repeat(4,100px 100px 100px); 
+    column-gap: 20px;
+    row-gap: 20px;
+    /* grid-template-columns: 100px 100px 100px;
+    
+    grid-template-rows: 100px 100px 100px; */
+
+    /* grid-template-columns:repeat(3,auto); */
+
+}
+.catagory{
+    border: solid 2px black;
+}

@@ -1,161 +1,243 @@
-
+@import "ml.scss"; 
 :root{
-    --gredient:linear-gradient(#fb7ce3,#79e8f1);
-  --textshadow1: drop-shadow( gray 0px 3px 3px);
-  --textshadow2: gray 2px 4px 5px; 
-  --boxshadow:
+  --gredient:linear-gradient(#fb7ce3,#79e8f1);
+--textshadow1: drop-shadow( gray 0px 3px 3px);
+--textshadow2: gray 2px 4px 5px; 
+--boxshadow:
 
-  
+
 }
 
 /* for hmburger icon */
 .fa {
-    font-size: 32px;
-    color: #9c47fc;
-    display: block;
-    background: -webkit-linear-gradient(#fb7ce3,#79e8f1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  font-size: 32px;
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(#fb7ce3,#79e8f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-header {
+  font-size: 32px;
+  margin: 20px;
   
-  .page-header {
-    font-size: 32px;
-    margin: 20px;
-    
-    display: block;
-    /* background: -webkit-linear-gradient(#9c47fc, #356ad2); */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  display: block;
+  /* background: -webkit-linear-gradient(#9c47fc, #356ad2); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fontawesome-icon-list {
+  text-align: center;
+}
+
+.icon {
   
-  .fontawesome-icon-list {
-    text-align: center;
-  }
   
-  .icon {
-    
-    
-    text-align: center;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    transition: all .2s;
-  }
+  text-align: center;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: all .2s;
+}
 
 /* header gredient code  */
-  .mlnamediv {
-    max-width:auto;
-    
-    background: var(--gredient);
-    border-radius: 100px;
-    
-
-  }
+.mlnamediv {
+  max-width:auto;
   
-  .mlname {
+  background: var(--gredient);
+  border-radius: 100px;
+  
+
+}
+
+.mlname {
 text-shadow: gray 2px 4px 5px; 
 font-size: 20px;
-    text-transform: uppercase;
-    background:white;
-    color:black;
-    padding: 10px;
-    margin:15px ;
-    border-radius: 100px;
-  }
+  text-transform: uppercase;
+  background:white;
+  color:balck;
+  padding: 10px;
+  margin:15px ;
+  border-radius: 100px;
+}
 
+
+.mlml{
+  width:fit-content;
+  height:auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns:1fr 4fr ;
+  grid-gap:20px;
+  overflow: hidden; 
+  overflow-x: hidden;
   
-  .mlml{
-    width: fit-content;
-    height: fit-content;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns:1fr 4fr ;
-    grid-gap:20px;
-    overflow: hidden; 
-    overflow-x: hidden;
-    
-  }
+}
+
+
+.mlml :nth-child(1) img{
+  object-fit:cover;
+  width:1fr;
+  height:300px;
   
-  
-  .mlml :nth-child(1) img{
-    object-fit:cover;
-    width: 1fr;
-    height:300px;
-  border: solid 0px transparent;
-  border-top-left-radius:10px;
-  border-bottom-left-radius:10px;
-  border-right: solid gray 2px;
+border: solid 0px transparent;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-right: solid gray 2px;
+display:flex;
+justify-content: flex-start;
+
+}
+.mlml :nth-child(2){
   display:flex;
-  justify-content: flex-start;
+  flex-direction: column;
   
-  }
-  .mlml :nth-child(2){
-    display:flex;
-    flex-direction: column;
-    
-  }
-  .mlml :nth-child(2) h1{
+}
+.mlml :nth-child(2) h1{
 text-transform: uppercase;
 text-align: center !important;
 align-self: center;
 text-shadow: var(--textshadow2);
+}
+.mlml :nth-child(2) span{
+color: gray;
+transition: .5s;
+
+}
+.mlml :nth-child(2) a span{
+  background-image:var(--gredient);
+  padding: 2px;
+  border-radius: 10px;
+  transition: .5s;
+
+}
+.mlml :nth-child(2) a span div {
+  background-color:white;
+  padding: 5px;
+  color:black;
+  text-transform: uppercase;
+  text-shadow: var(--textshadow2);    border-radius: 10px;
+  
+  box-shadow:2px 5px 10px #79e8f1 ;
   }
-  .mlml :nth-child(2) span{
- color: gray;
- transition: .5s;
+.mlml :nth-child(2) a span div:active {
+background-color: transparent;
+transition: 1s;
+color:white;
+}
+  
+.mlml :nth-child(2) a span .btn:active{
+
+
+animation: gredient 1s  forwards ;  
+text-decoration: none;
+}
+@keyframes gredient{
+  0%{
+    font-size: 20px;
+  }
+  20%{
+    font-size:17px;
 
   }
-  .mlml :nth-child(2) a span{
-    background-image:var(--gredient);
-    padding: 2px;
-    border-radius: 10px;
-    transition: .5s;
-
+  50%{
+    font-size: 15px;
   }
-  .mlml :nth-child(2) a span div {
-    background-color:white;
-    padding: 5px;
-    color:black;
-    text-transform: uppercase;
-    text-shadow: var(--textshadow2);    border-radius: 10px;
-    transition: .5s;
-    box-shadow:2px 5px 10px #79e8f1 ;
-    }
-  .mlml :nth-child(2) a span div:hover {
- font-size: 20px;
- transition: .5s;
+  70%{
+    font-size: 17px;
   }
-     .wrapper{
-    background-image: var(--gredient)
-    ;
-    padding: 5px;
-    border-radius:10px;
+  100%{
+    font-size: 20px;
   }
+}
+   .wrapper{
+  background-image: var(--gredient)
+  ;
+  padding: 5px;
+  border-radius:10px;
+}
 @media only screen and  (max-width:425px)
 {
 
 .mlname{
-  font-size: 15px;
+font-size: 15px;
 }
 .mlcontiner{
-    align-self: start;
-    float: left;
-    display:flex;
-    justify-self: start;
-    align-content: space-between;
+  align-self: start;
+  float: left;
+  display:flex;
+  justify-self: start;
+  align-content: space-between;
 }
 
 .mllogo img{
-    object-fit: cover;   
-    width: 40px !important;
-    height:40px !important;
-    filter: drop-shadow( gray 0px 3px 3px);
+  object-fit: cover;   
+  width: 40px !important;
+  height:40px !important;
+  filter: drop-shadow( gray 0px 3px 3px);
+}
+section .wrapper{
+  height: fit-content;
+  width: fit-content;   
+
+  margin-right: 100px !important;
+}
+.btn{
+  display:flex;
+
+  font-size: 15px;
+}
+.mlml{
+  height: fit-content;
+  width: fit-content;
+}
+
+.mlml img{
+  height:200px !important;
+width:200px;
+object-fit: cover;
+}
+section .wrapper .mlml div h1{
+font-size: 20px;
+}
+section .wrap{
+  font-size: 15px;
 }
 section :nth-child(2) div .two{
 order: 1;
 display: flex;
+
 }
+section :nth-child(2) div .two img{
+border-right:transparent;
+border-left:gray 2px solid;
+
+}
+section :nth-child(2) div .wrap{
+margin-left:20px;
+}
+.mlml :nth-child(2) a span div:hover {
+  background-color: transparent;
+  transition: 1s;
+  color:white;
+  }
+    
+  .mlml :nth-child(2) a span .btn:hover,:active{
+  
+  
+  animation: gredient 1s  forwards ;
+  text-decoration: none;
+  }
+  @keyframes gredient{
+  }
+  to{}
+  from{
+    
+  }
+  
 
 }

@@ -1,0 +1,12 @@
+
+:root{
+ --bg:black;
+}
+
+@mixin bg {
+    color: red;
+}
+.mlname{
+    @include bg;
+    color:red;
+}

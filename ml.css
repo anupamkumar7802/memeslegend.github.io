@@ -61,6 +61,34 @@ font-size: 20px;
     border-radius: 100px;
   }
 
+
+
+
+
+  .memebg{
+    background-image: var(--gredient);
+    padding: 5px;
+    border-radius: 10px;
+  
+  }
+  .memesection{
+    border: solid transparent ;
+    border-radius: 10px;
+    grid-template-columns: 2fr 5fr !important;
+
+
+  }
+  .side1{
+  width: 500px;
+  height: auto;
+
+  }
+  .memepic {
+   min-width:200px ;
+   min-height:200px;
+    object-fit:cover;
+  }
+
 @media only screen and  (max-width:425px)
 {
 

@@ -46,8 +46,9 @@
 
 /* header gredient code  */
 .mlnamediv {
-  max-width:auto;
   
+  width: auto;
+  height: fit-content;
   background: var(--gredient);
   border-radius: 100px;
   
@@ -61,7 +62,7 @@ font-size: 20px;
   background:white;
   color:balck;
   padding: 10px;
-  margin:15px ;
+  margin:5px ;
   border-radius: 100px;
 }
 
@@ -81,8 +82,8 @@ font-size: 20px;
 
 .mlml :nth-child(1) img{
   object-fit:cover;
-  width:1fr;
-  height:300px;
+  width:50;
+  height:50px;
   
 border: solid 0px transparent;
 border-top-left-radius:10px;
@@ -176,8 +177,8 @@ font-size: 15px;
 
 .mllogo img{
   object-fit: cover;   
-  width: 40px !important;
-  height:40px !important;
+  width: 45px !important;
+  height:45px !important;
   filter: drop-shadow( gray 0px 3px 3px);
 }
 section .wrapper{

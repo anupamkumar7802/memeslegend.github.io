@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="ml.css">
     <link rel="stylesheet" href="ml.scss">
+    <link rel="stylesheet" href="header.css">
     <!-- requried link tags --------------------------------------->
 
     <!-- requried script tags -->
@@ -43,25 +44,33 @@
 </head>
 
 <body>
-    <header class=" position-fixed d-flex my-2 justify-content-between align-content-center">
+    <header class="w-100 position-fixed d-flex my-2   ">
 
-        <div class="d-flex candlogo align-content-center justify-content-center align-items-center">
-            <div class="mlnamediv">
-
-                <h1 class=" mlname text-nowrap container-fluid   ">memes legend</h1>
+        <div class=" d-flex candlogo ">
+            <div class="mlnamediv ">
+                <h1 class=" mlname text-nowrap">memes legend </h1>
             </div>
-            <div class="mllogo container-fluid "><img src="logo.jpg" class="img-fluid d-flex rounded-circle w-50 h-50"
+
+            <div class=" w-auto h-auto mllogo container-fluid "><img src="logo.jpg" class=" img-fluid rounded-circle "
                     alt="memeslegend">
             </div>
+        </div><!-- <div class="icon small "><i class="fa fa-bars"></i></div> -->
+
+
+        <div class=" mx-2   containerforham" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-        <div class="ham">
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <!-- <div class="icon small "><i class="fa fa-bars"></i></div> -->
-        </div>
+
+
 
     </header>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 
-</html>-
+</html>

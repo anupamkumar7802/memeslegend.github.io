@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+
+        }
+
+        .preimg {
+            border-radius: 50%;
+            /* display: none !important; */
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            margin: 200px 200px;
+
+            height: 50px;
+            /* animation: round 2s infinite linear; */
+            animation-play-state: running;
+        }
+
+        @keyframes round {
+            0% {
+                transform: rotatex(360deg) !important;
+            }
+
+            /* 50% {
+                transform: translateY(200px);
+            } */
+
+            100% {
+
+                transform: rotatex(0deg) !important;
+            }
+        }
+
+        .d1 {
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            margin: 200px 200px;
+            border: solid transparent 3px;
+            border-left: rgb(226, 226, 226) solid 3px !important;
+            border-image: linear-gradient(45deg, #fb7ce3, #79e8f1), 10;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            transition: .5s;
+            animation: linear round 2s infinite;
+        }
+
+        @keyframes round {
+            0% {
+                transition: all 0.5s;
+                border-color: #79e8f1;
+                transform: rotate(0deg);
+            }
+
+
+            100% {
+                border-color: #fb7ce3;
+                transition: 0.5s;
+
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="d1">
+    </div>
+    <div class="sd1">
+        <img class="preimg" src="pre.jpg" alt="loading...">
+
+    </div>
+
+
+
+</body>
+
+</html>

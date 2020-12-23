@@ -44,6 +44,7 @@
 </head>
 
 <body>
+
     <header class="w-100 position-fixed d-flex my-2 align-content-center align-items-center   ">
 
         <div class=" d-flex candlogo ">
@@ -54,50 +55,136 @@
             <div class=" mllogo container-fluid "><img src="logo.jpg" class=" img-fluid rounded-circle "
                     alt="memeslegend">
             </div>
-        </div><!-- <div class="icon small "><i class="fa fa-bars"></i></div> -->
+        </div>
 
 
-
-
+        <!-- menu icon -->
         <div id="mySidenav" class="sidenav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <table>
+                <tr>
+                    <td>
+
+                        <a href="#">home</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-home"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">memes</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-smile-o"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">memes template</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-picture-o"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">memes origin</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-id-card"></i>
+
+                    </td>
+                </tr>
+                <tr class="sec">
+                    <td>
+
+                        <a href="#">about us</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-users"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">contect us</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-phone-square"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">follow us</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-plus"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">support us</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-money"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <a href="#">feedback</a>
+                    </td>
+                    <td>
+                        <i class="fa fa-star"></i>
+
+                    </td>
+                </tr>
+            </table>
+
         </div>
 
         <!-- Use any element to open the sidenav -->
-        <!-- <span onclick="openNav()">open</span> -->
-        <div onclick="openNav(),myFunction(this)" class=" mx-2   containerforham">
-            <div class="bar1"></div>
-            <div class=" bar2"></div>
-            <div class=" bar3"></div>
-        </div>
+        <span class="menuicon" onclick="openNav()">
+            <div class="icon small "><i class="fa fa-bars"></i></div>
+        </span>
 
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="main">
-
-        </div>
-        <script>
-            /* Set the width of the side navigation to 250px */
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            /* Set the width of the side navigation to 0 */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-
-        </script>
 
 
     </header>
     <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            // document.getElementById("mySidenav").style.width = "250px";
         }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+
     </script>
+
+    <!-- <---------------------------------------header and nav end------>
+
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>

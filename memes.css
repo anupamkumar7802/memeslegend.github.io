@@ -1,3 +1,6 @@
+
+@import "ml.sass";
+
 body{
     background-color: white !important;
     
@@ -83,7 +86,7 @@ margin-bottom: 30px !important;
     -webkit-text-stroke:transparent 2px;
     font-size: 20px;
     text-shadow: black 2px 4px 5px; 
-    
+ color:white;   
     
 }
 .catagory a:hover{

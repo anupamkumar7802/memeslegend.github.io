@@ -4,9 +4,10 @@
 <head>
 	<link rel="stylesheet" href="bootstrap/bootstrap.css">
 	<style>
-		@import "ml.scss";
+	
 
 		body {
+
 			margin: 0;
 			padding: 0;
 			display: flex;
@@ -80,6 +81,7 @@
 		.loading {
 			-webkit-text-stroke: 1px white;
 			-webkit-background-clip: text;
+			background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
 			filter: drop-shadow(gray 2px 2px 2px);
@@ -87,9 +89,9 @@
 	</style>
 </head>
 
-<body>
-	<section
-		class=" preloadersec d-flex flex-column justify-content-center align-content-center align-items-center text-capitalize">
+<body >
+	<section id="preloadersec"
+		class=" d-flex flex-column justify-content-center align-content-center align-items-center text-capitalize">
 		<div class="loader">
 			<span></span>
 			<span></span>
@@ -101,6 +103,8 @@
 			</h1>
 		</div>
 	</section>
+	<script src="preloading.js"></script>
+
 </body>
 
 </html>

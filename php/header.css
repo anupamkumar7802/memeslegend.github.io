@@ -1,4 +1,6 @@
-@import "ml.scss";
+@import "ml.sass";
+
+
 body::-webkit-scrollbar{
 
     border-radius:20px ; 
@@ -27,9 +29,7 @@ header{
 justify-content: space-between !important;
 
 }
-.fa{
-/* font-size:20px; */
-}
+
 .mllogo{
     width:90px !important;
     height:90px !important;
@@ -117,10 +117,7 @@ padding: 200px;
     text-transform: capitalize;
     transition: 0.3s
 }
-.sidenav table tr td {
 
-
-}
 .sidenav table tr td a{
     
     margin-right: 20px;
@@ -167,9 +164,7 @@ border-radius: 20px;
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 450px) {
-     .sidenav{
-         /* width: 300px !important; */
-     }
+    
     .sidenav table a{
         font-size: 20px; }
 }   

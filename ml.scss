@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Frijole&family=Righteous&display=swap");
+
+:root {
+  --mycolor: white;
+  --gredient: linear-gradient(120deg, #fb7ce3, #79e8f1);
+  --textshadow1: drop-shadow(gray 0px 3px 3px);
+  --textshadow2: gray 2px 4px 5px;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+.carousel-caption {
+  button {
+    width: 50%;
+    height: 20%;
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+    background-image: var(--gredient);
+    font-size: 30px;
+    text-transform: capitalize;
+    text-shadow: var(--textshadow2);
+    filter: opacity(0.9);
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    filter: opacity(1);
+  }
+
+  button i {
+    margin-left: 5px;
+    transition: margin-left 0.5s;
+    font-weight: bolder;
+  }
+
+  h3 {
+    background-image: var(--gredient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
+    font-family: "Aclonica", sans-serif;
+    text-shadow: none !important;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h3,
+  p {
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+
+  p {
+    text-shadow: none !important;
+    font-family: "Redressed", cursive;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    font-size: 30px;
+  }
+
+  i {
+    display: none;
+  }
+}
+
+//for icons gredient
+.fa {
+  font-size: 32px;
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(45deg, #fb7ce3, #79e8f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-header {
+  font-size: 32px;
+  margin: 20px;
+
+  display: block;
+  /* background: -webkit-linear-gradient(#9c47fc, #356ad2); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fontawesome-icon-list {
+  text-align: center;
+}
+
+.icon {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: all 0.2s;
+}
+
+.mlnamediv {
+  overflow-x: scroll;
+  width: auto;
+  height: fit-content;
+  background: var(--gredient);
+  border-radius: 100px;
+}
+
+.mlname {
+  text-shadow: gray 2px 4px 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: white;
+  color: balck;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 100px;
+}
+.wrapper {
+  transition: 0.5s;
+  /* animation: zoom 0.5s linear ; */
+  overflow-x: hidden;
+}
+
+.mlml {
+  width: fit-content;
+  height: auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.mlml :nth-child(odd) img {
+  object-fit: cover;
+  width: 250;
+  height: 300px;
+
+  border: solid 0px transparent;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-right: solid gray 2px;
+  display: flex;
+  justify-content: flex-start;
+}
+.mlml :nth-child(even) {
+  display: flex;
+  flex-direction: column;
+}
+.mlml :nth-child(even) h1 {
+  text-transform: uppercase;
+  text-align: center !important;
+  align-self: center;
+  text-shadow: var(--textshadow2);
+}
+.mlml :nth-child(even) span {
+  color: gray;
+  transition: 0.5s;
+}
+.mlml :nth-child(even) a span {
+  background-image: var(--gredient);
+  padding: 2px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.mlml :nth-child(even) a span div {
+  background-color: white;
+  padding: 5px;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: var(--textshadow2);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px #79e8f1;
+}
+.mlml :nth-child(even) a span div:hover {
+  background-color: transparent;
+  transition: 0.5s;
+  color: white;
+}
+.btn {
+  font-size: 20px !important;
+}
+.mlml :nth-child(odd) a span .btn:hover,
+.mlml :nth-child(even) a span .btn:hover {
+  animation: gredient 0.5s forwards linear;
+  text-decoration: none;
+}
+.btnspan {
+  margin-top: 50px;
+}
+@keyframes gredient {
+  0% {
+    font-size: 15px;
+  }
+  20% {
+    font-size: 13px;
+  }
+  50% {
+    font-size: 15px;
+  }
+  70% {
+    font-size: 17px;
+  }
+  100% {
+    font-size: 15px;
+  }
+}
+.wrap {
+  font-size: 30px;
+}
+.wrapper {
+  background-image: var(--gredient);
+  padding: 5px;
+  border-radius: 10px;
+}
+.wholeslider {
+  padding: 5px 5px;
+  overflow-x: hidden;
+}
+.item img {
+  border: 5px solid;
+
+  border-image: var(--gredient) 10;
+}
+.left,
+.right :hover {
+  background: transparent !important;
+}
+@media only screen and (max-width: 425px) {
+  body {
+    padding: 10px;
+  }
+
+  //for slider
+  .wholeslider {
+    width: 100px !important;
+    padding: 5px 5px;
+    overflow-x: hidden;
+    margin-right: -200px;
+  }
+  .mlml div:nth-child(2) {
+    overflow-x: hidden;
+    width: 200px !important;
+  }
+  .item img {
+    border: 5px solid;
+
+    border-image: var(--gredient) 10;
+  }
+  .mlname {
+    font-size: 15px;
+  }
+  .mlcontiner {
+    align-self: start;
+    float: left;
+    display: flex;
+    justify-self: start;
+    align-content: space-between;
+  }
+
+  .mllogo img {
+    object-fit: cover;
+    width: 45px !important;
+    height: 45px !important;
+    filter: drop-shadow(gray 0px 3px 3px);
+  }
+  section .wrapper {
+    height: fit-content;
+    width: fit-content;
+    margin-left: -15px !important;
+  }
+  .wrapper .mlml :nth-child(2) {
+    display: flex;
+
+    justify-content: center;
+  }
+  .btn {
+    display: flex;
+
+    font-size: 15px !important;
+  }
+  .mlml {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .mlml img {
+    height: 200px !important;
+    width: 200px;
+    object-fit: cover;
+  }
+  section .wrapper .mlml div h1 {
+    font-size: 20px;
+  }
+  section .wrap {
+    font-size: 15px;
+  }
+  section :nth-child(even) div .two {
+    order: 1;
+    display: flex;
+  }
+  section :nth-child(even) div .two img {
+    border-right: transparent;
+    border-left: gray 2px solid;
+  }
+  section :nth-child(even) div .wrap {
+    margin-left: 20px;
+  }
+  .mlml :nth-child(even) a span div:hover {
+    background-color: transparent;
+    transition: 1s;
+    color: white;
+  }
+
+  .mlml :nth-child(odd) a:hover,
+  .mlml :nth-child(even) a span .btn:hover {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:avtive {
+    text-decoration: none;
+  }
+  .btnspan {
+    margin-top: 15px;
+  }
+}
+
+@mixin box {
+  background-color: red;
+  width: 100px;
+  height: 50px;
+}
+
+@mixin scrollbarcolor {
+  :-webkit-scrollbar {
+    border-radius: 20px;
+    width: 15px;
+  }
+  :-webkit-scrollbar-track {
+    background-color: #efefef;
+    box-shadow: inset rgb(226, 222, 222) 2px 2px 2px 2px;
+    border-radius: 20px;
+  }
+  :-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
+    border-radius: 20px;
+  }
+}

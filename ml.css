@@ -9,7 +9,7 @@
 html {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -27,11 +27,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   background: White;
 }
@@ -43,31 +43,31 @@ body {
   border-radius: 50%;
   border: 5px white solid;
   -webkit-box-shadow: inset 5px 5px 5px 5px black, 5px 5px 5px 5px who;
-          box-shadow: inset 5px 5px 5px 5px black, 5px 5px 5px 5px who;
+  box-shadow: inset 5px 5px 5px 5px black, 5px 5px 5px 5px who;
   background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
   -webkit-animation: animate 0.5s linear infinite;
-          animation: animate 0.5s linear infinite;
+  animation: animate 0.5s linear infinite;
 }
 
 @-webkit-keyframes animate {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes animate {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -82,22 +82,22 @@ body {
 
 .loader span:nth-child(1) {
   -webkit-filter: blur(5px);
-          filter: blur(5px);
+  filter: blur(5px);
 }
 
 .loader span:nth-child(2) {
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
 }
 
 .loader span:nth-child(3) {
   -webkit-filter: blur(25px);
-          filter: blur(25px);
+  filter: blur(25px);
 }
 
 .loader span:nth-child(4) {
   -webkit-filter: blur(50px);
-          filter: blur(50px);
+  filter: blur(50px);
 }
 
 .loader:after {
@@ -118,7 +118,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(45deg, #fb7ce3, #79e8f1);
   -webkit-filter: drop-shadow(gray 2px 2px 2px);
-          filter: drop-shadow(gray 2px 2px 2px);
+  filter: drop-shadow(gray 2px 2px 2px);
 }
 
 .carousel-caption button {
@@ -132,7 +132,7 @@ body {
   text-transform: capitalize;
   text-shadow: var(--textshadow2);
   -webkit-filter: opacity(0.9);
-          filter: opacity(0.9);
+  filter: opacity(0.9);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-bottom: 20px;
@@ -140,7 +140,7 @@ body {
 
 .carousel-caption button:hover {
   -webkit-filter: opacity(1);
-          filter: opacity(1);
+  filter: opacity(1);
 }
 
 .carousel-caption button i {
@@ -181,7 +181,7 @@ body {
 }
 
 .fa {
-  font-size: 32px;
+  font-size: 30px;
   color: #9c47fc;
   display: block;
   background: -webkit-linear-gradient(45deg, #fb7ce3, #79e8f1);
@@ -210,11 +210,11 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 10px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -258,7 +258,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
-      grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
   grid-gap: 20px;
   overflow: hidden;
   overflow-x: hidden;
@@ -266,7 +266,7 @@ body {
 
 .mlml :nth-child(odd) img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 250;
   height: 300px;
   border: solid 0px transparent;
@@ -277,8 +277,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .mlml :nth-child(even) {
@@ -287,16 +287,16 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .mlml :nth-child(even) h1 {
   text-transform: uppercase;
   text-align: center !important;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   text-shadow: var(--textshadow2);
 }
 
@@ -322,7 +322,7 @@ body {
   text-shadow: var(--textshadow2);
   border-radius: 10px;
   -webkit-box-shadow: 2px 5px 10px #79e8f1;
-          box-shadow: 2px 5px 10px #79e8f1;
+  box-shadow: 2px 5px 10px #79e8f1;
 }
 
 .mlml :nth-child(even) a span div:hover {
@@ -339,7 +339,7 @@ body {
 .mlml :nth-child(odd) a span .btn:hover,
 .mlml :nth-child(even) a span .btn:hover {
   -webkit-animation: gredient 0.5s forwards linear;
-          animation: gredient 0.5s forwards linear;
+  animation: gredient 0.5s forwards linear;
   text-decoration: none;
 }
 
@@ -401,7 +401,7 @@ body {
 .item img {
   border: 5px solid;
   -o-border-image: var(--gredient) 10;
-     border-image: var(--gredient) 10;
+  border-image: var(--gredient) 10;
 }
 
 .left,
@@ -426,29 +426,29 @@ body {
   .item img {
     border: 5px solid;
     -o-border-image: var(--gredient) 10;
-       border-image: var(--gredient) 10;
+    border-image: var(--gredient) 10;
   }
   .mlname {
     font-size: 15px;
   }
   .mlcontiner {
     -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
     float: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-self: start;
     -ms-flex-line-pack: justify;
-        align-content: space-between;
+    align-content: space-between;
   }
   .mllogo img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 45px !important;
     height: 45px !important;
     -webkit-filter: drop-shadow(gray 0px 3px 3px);
-            filter: drop-shadow(gray 0px 3px 3px);
+    filter: drop-shadow(gray 0px 3px 3px);
   }
   section .wrapper {
     height: -webkit-fit-content;
@@ -464,8 +464,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .btn {
     display: -webkit-box;
@@ -485,7 +485,7 @@ body {
     height: 200px !important;
     width: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   section .wrapper .mlml div h1 {
     font-size: 20px;
@@ -495,8 +495,8 @@ body {
   }
   section :nth-child(even) div .two {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -524,6 +524,9 @@ body {
   }
   .btnspan {
     margin-top: 15px;
+  }
+  table td tr .fa {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=ml.css.map */
